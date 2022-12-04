@@ -8,6 +8,8 @@ struct ListNode {
 
 typedef struct ListNode ListNode;
 
+// Merge k sorted lists
+ListNode* mergeKLists(ListNode**, int);
 // Merges two sorted lists
 ListNode* mergeTwoLists(ListNode*, ListNode*);
 

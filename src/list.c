@@ -2,6 +2,15 @@
 #include <stdlib.h> 
 #include <stdio.h>
 
+ListNode* mergeKLists(ListNode** lists, int size) {
+    ListNode* list = NULL;
+
+    for (int i = 0; i < size; i++)
+	list = mergeTwoLists(lists[i], list);
+
+    return list;
+}
+
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     ListNode* merged_list = NULL;
 

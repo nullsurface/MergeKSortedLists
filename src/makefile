@@ -2,10 +2,10 @@ CC = gcc
 CFLAGS = -Wall 
 OBJS = main.o list.o
 
-all: m2l
+all: mergeklists
 
-m2l:	$(OBJS)
-		$(CC) $(CFLAGS) $^ -o m2l
+mergeklists:	$(OBJS)
+		$(CC) $(CFLAGS) $^ -o mergeklists
 
 main.o: main.c list.h
 		$(CC) -c $(CFLAGS) main.c
